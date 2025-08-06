@@ -18,8 +18,11 @@ body {
   margin-bottom: 20px;
 }
 
-.board-row {
-  display: flex;
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 60px);
+  gap: 8px;
+  margin-bottom: 20px;
 }
 
 .square {
@@ -28,7 +31,6 @@ body {
   background-color: #61dafb;
   color: #000;
   border: none;
-  margin: 4px;
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
@@ -37,5 +39,48 @@ body {
 }
 
 .square:hover {
+  background-color: #21a1f1;
+}
+
+.reset-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.reset-button:hover {
+  background-color: #e60000;
+}
+
+.game-info {
+  margin-top: 30px;
+}
+
+.game-info ol {
+  padding-left: 0;
+  list-style: none;
+}
+
+.game-info li {
+  margin-bottom: 10px;
+}
+
+.game-info button {
+  font-size: 14px;
+  padding: 6px 12px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: #61dafb;
+  color: black;
+  transition: background-color 0.3s;
+}
+
+.game-info button:hover {
   background-color: #21a1f1;
 }
